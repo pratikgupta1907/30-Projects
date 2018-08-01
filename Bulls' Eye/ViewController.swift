@@ -13,19 +13,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var targetLabel: UILabel!
     var targetValue = 0
+    var score = 0
+    @IBOutlet weak var scoreLabel: UILabel!
+    var round = 1
+    @IBOutlet weak var roundLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         currentValue = lroundf(slider.value)
         startNewRound()
     }
     
+   
     func startNewRound(){
+        round += 1
         targetValue = 1 + Int(arc4random_uniform(100))
-        targetLabel.text = String(targetValue)
         currentValue = 50
         slider.value = 50
+        updateLabels()
     }
-
+    
+    func updateLabels(){
+        targetLabel.text = String(targetValue)
+        scoreLabel.text = String(score)
+        roundLabel.text = String(round)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -38,7 +51,7 @@ class ViewController: UIViewController {
     @IBAction func showAlert(){
         let differnce = abs(currentValue - targetValue)
         let points = 100 - differnce
-        
+        score += points
         let message = "you scored \(points) points"
         let Alert = UIAlertController(title: "HEllo World!", message: message , preferredStyle: .alert)
         let action = UIAlertAction(title: "exit", style: .default, handler: nil)
