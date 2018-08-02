@@ -13,7 +13,6 @@ class AboutMeViewController: UIViewController {
     @IBOutlet weak var webAboutMeView: UIWebView!
     
     
-    
     @IBAction func close (){
         dismiss(animated: true, completion: nil)
     }
