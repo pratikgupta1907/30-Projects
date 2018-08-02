@@ -15,15 +15,38 @@ class ViewController: UIViewController {
     var targetValue = 0
     var score = 0
     @IBOutlet weak var scoreLabel: UILabel!
-    var round = 1
+    var round = 0
     @IBOutlet weak var roundLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         currentValue = lroundf(slider.value)
-        startNewRound()
+        startOver()
+        
+        let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
+        slider.setThumbImage(thumbImageNormal, for: .normal)
+        
+        let thumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
+        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
+        
+        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
+        let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
+        slider.setMaximumTrackImage(trackRightResizable, for: .normal)
+        
+        
     }
     
+    @IBAction func startOver(){
+        score = 0
+        round = 0
+        startNewRound()
+    }
    
     func startNewRound(){
         round += 1
@@ -39,10 +62,6 @@ class ViewController: UIViewController {
         roundLabel.text = String(round)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func sliderMoved(_ slider: UISlider){
         currentValue = lroundf(slider.value)
@@ -50,14 +69,33 @@ class ViewController: UIViewController {
 
     @IBAction func showAlert(){
         let differnce = abs(currentValue - targetValue)
-        let points = 100 - differnce
+        var points = 100 - differnce
+        
+        let title: String
+        if differnce == 0 {
+            title = "Perfect! You Scored Perfect Bonus"
+            points += 100
+        } else if differnce < 5 {
+            title = "Excellent!"
+            if differnce == 1 {
+                points += 50
+            }
+        } else if differnce < 10 {
+            title = "preety good"
+        } else {
+            title = "not even close"
+        }
         score += points
+        
         let message = "you scored \(points) points"
-        let Alert = UIAlertController(title: "HEllo World!", message: message , preferredStyle: .alert)
-        let action = UIAlertAction(title: "exit", style: .default, handler: nil)
+        let Alert = UIAlertController(title: title, message: message , preferredStyle: .alert)
+        let action = UIAlertAction(title: "exit", style: .default, handler: {
+            action in
+            self.startNewRound()
+        })
+        
         Alert.addAction(action)
         present(Alert, animated: true, completion: nil)
-        startNewRound()
     }
     
 }

@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CE2E85F2112EDB0002F8223 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 7CE2E85E2112EDB0002F8223 /* BullsEye.html */; };
 		7CE6EAA221115BA700535369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6EAA121115BA700535369 /* AppDelegate.swift */; };
 		7CE6EAA421115BA700535369 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6EAA321115BA700535369 /* ViewController.swift */; };
 		7CE6EAA721115BA700535369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE6EAA521115BA700535369 /* Main.storyboard */; };
 		7CE6EAA921115BA700535369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE6EAA821115BA700535369 /* Assets.xcassets */; };
 		7CE6EAAC21115BA700535369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE6EAAA21115BA700535369 /* LaunchScreen.storyboard */; };
+		7CE6EAB42112B1E500535369 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6EAB32112B1E500535369 /* AboutViewController.swift */; };
+		7CE6EAB62112B5F600535369 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6EAB52112B5F600535369 /* AboutMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7CE2E85E2112EDB0002F8223 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 		7CE6EA9E21115BA700535369 /* Bulls' Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bulls' Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE6EAA121115BA700535369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CE6EAA321115BA700535369 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		7CE6EAA821115BA700535369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CE6EAAB21115BA700535369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CE6EAAD21115BA700535369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CE6EAB32112B1E500535369 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		7CE6EAB52112B5F600535369 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +60,12 @@
 		7CE6EAA021115BA700535369 /* Bulls' Eye */ = {
 			isa = PBXGroup;
 			children = (
+				7CE2E85E2112EDB0002F8223 /* BullsEye.html */,
 				7CE6EAA121115BA700535369 /* AppDelegate.swift */,
 				7CE6EAA321115BA700535369 /* ViewController.swift */,
 				7CE6EAA521115BA700535369 /* Main.storyboard */,
+				7CE6EAB52112B5F600535369 /* AboutMeViewController.swift */,
+				7CE6EAB32112B1E500535369 /* AboutViewController.swift */,
 				7CE6EAA821115BA700535369 /* Assets.xcassets */,
 				7CE6EAAA21115BA700535369 /* LaunchScreen.storyboard */,
 				7CE6EAAD21115BA700535369 /* Info.plist */,
@@ -124,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CE6EAAC21115BA700535369 /* LaunchScreen.storyboard in Resources */,
+				7CE2E85F2112EDB0002F8223 /* BullsEye.html in Resources */,
 				7CE6EAA921115BA700535369 /* Assets.xcassets in Resources */,
 				7CE6EAA721115BA700535369 /* Main.storyboard in Resources */,
 			);
@@ -136,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE6EAB42112B1E500535369 /* AboutViewController.swift in Sources */,
 				7CE6EAA421115BA700535369 /* ViewController.swift in Sources */,
+				7CE6EAB62112B5F600535369 /* AboutMeViewController.swift in Sources */,
 				7CE6EAA221115BA700535369 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
