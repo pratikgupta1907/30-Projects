@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7CE2E85F2112EDB0002F8223 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 7CE2E85E2112EDB0002F8223 /* BullsEye.html */; };
+		7CE2E8612113461C002F8223 /* AboutMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 7CE2E8602113461C002F8223 /* AboutMe.html */; };
 		7CE6EAA221115BA700535369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6EAA121115BA700535369 /* AppDelegate.swift */; };
 		7CE6EAA421115BA700535369 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6EAA321115BA700535369 /* ViewController.swift */; };
 		7CE6EAA721115BA700535369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE6EAA521115BA700535369 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		7CE2E85E2112EDB0002F8223 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
+		7CE2E8602113461C002F8223 /* AboutMe.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AboutMe.html; sourceTree = "<group>"; };
 		7CE6EA9E21115BA700535369 /* Bulls' Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bulls' Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE6EAA121115BA700535369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CE6EAA321115BA700535369 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		7CE6EAA021115BA700535369 /* Bulls' Eye */ = {
 			isa = PBXGroup;
 			children = (
+				7CE2E8602113461C002F8223 /* AboutMe.html */,
 				7CE2E85E2112EDB0002F8223 /* BullsEye.html */,
 				7CE6EAA121115BA700535369 /* AppDelegate.swift */,
 				7CE6EAA321115BA700535369 /* ViewController.swift */,
@@ -136,6 +139,7 @@
 				7CE2E85F2112EDB0002F8223 /* BullsEye.html in Resources */,
 				7CE6EAA921115BA700535369 /* Assets.xcassets in Resources */,
 				7CE6EAA721115BA700535369 /* Main.storyboard in Resources */,
+				7CE2E8612113461C002F8223 /* AboutMe.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
