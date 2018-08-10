@@ -1,18 +1,5 @@
 # Bulls-Eye
-Bull's eye
-<br>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Bull's Eye</title>
-<meta charset="utf-8">
-<style type="text/css">
-html { background: #faeecd; }
-body { color: #000; font: 16px "Arial Rounded MT Bold", Helvetica; }
-h1 { text-align: center; color: rgb(96, 30, 0); font-size: 24px; font-weight: bold; }
-</style>
-</head>
-<body>
+
 
 <h1>★ Bull's Eye ★</h1>
 
